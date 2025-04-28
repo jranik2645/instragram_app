@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:instagram/screens/Home/home_screen.dart';
+import 'package:instagram/screens/SignUp/sign_up_Screen.dart';
 
 import '../../widget/uihelper.dart';
+import '../Bottom_Nav/bottom_nav.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -52,7 +55,12 @@ class _LoginScreenState extends State<LoginScreen> {
               ],
             ),
 
-            UiHelper.CustomButton(callback: () {}, buttonName: 'Login'),
+            UiHelper.CustomButton(callback: () {
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => BottomNav()),
+              );
+            }, buttonName: 'Login'),
             SizedBox(height: 10),
 
             Row(
@@ -82,7 +90,12 @@ class _LoginScreenState extends State<LoginScreen> {
                   "Don't have an account?",
                   style: TextStyle(fontSize: 14, color: Colors.white),
                 ),
-                UiHelper.CustomTextButton(callback: () {}, tex: "Sign Up"),
+                UiHelper.CustomTextButton(callback: () {
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder: (context) => SignUpScreen()),
+                  );
+                }, tex: "Sign Up"),
               ],
             ),
           ],
