@@ -5,7 +5,8 @@ import 'package:instagram/screens/Home/home_screen.dart';
 import 'package:instagram/screens/Post_Screen/post_screen.dart';
 import 'package:instagram/screens/search/search_screen.dart';
 
-import 'Profile_Screen/profile_screen.dart';
+import '../login/Profile_Screen/profile_screen.dart';
+
 
 class BottomNav extends StatefulWidget {
   const BottomNav({super.key});

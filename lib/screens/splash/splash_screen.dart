@@ -33,7 +33,7 @@ class _SplashScreenState extends State<SplashScreen> {
           children: [
             UiHelper.CustomImage(imgurl: 'instagram.png'),
             SizedBox(height: 20),
-            UiHelper.CustomImage(imgurl: 'Instagram Logo (1).png'),
+            UiHelper.CustomImage(imgurl: 'logo.png'),
           ],
         ),
       ),
